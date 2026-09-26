@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" rx="192" fill="#0b100e"/>
+
+  <g transform="translate(512 500)">
+    <g transform="translate(-132 26) rotate(-20)">
+      <rect x="-158" y="-248" width="316" height="464" rx="30" fill="#efe6d4"/>
+      <rect x="-150" y="-240" width="300" height="448" rx="26" fill="#fbf7ee"/>
+      <text x="-118" y="-168" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="58" font-weight="700">10</text>
+      <text x="-118" y="-116" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="44">♠</text>
+      <text x="0" y="8" text-anchor="middle" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="84">♠</text>
+    </g>
+
+    <g transform="translate(0 -10) rotate(-2)">
+      <rect x="-158" y="-248" width="316" height="464" rx="30" fill="#efe6d4"/>
+      <rect x="-150" y="-240" width="300" height="448" rx="26" fill="#fbf7ee"/>
+      <text x="-118" y="-168" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="700">A</text>
+      <text x="-118" y="-114" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="44">♠</text>
+      <text x="0" y="4" text-anchor="middle" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="96">♠</text>
+    </g>
+
+    <g transform="translate(128 22) rotate(18)">
+      <rect x="-158" y="-248" width="316" height="464" rx="30" fill="#efe6d4"/>
+      <rect x="-150" y="-240" width="300" height="448" rx="26" fill="#fbf7ee"/>
+      <text x="-118" y="-168" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="700">K</text>
+      <text x="-118" y="-114" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="44">♠</text>
+      <text x="0" y="8" text-anchor="middle" fill="#17120c" font-family="Georgia, Times New Roman, serif" font-size="84">♠</text>
+    </g>
+  </g>
+
+  <g transform="translate(512 640)">
+    <circle r="210" fill="#0f3d2c" stroke="#0b100e" stroke-width="6"/>
+    <circle r="210" fill="none" stroke="#d4b15a" stroke-width="9"/>
+    <text x="0" y="-48" text-anchor="middle" dominant-baseline="central" font-size="370" font-family="Georgia, Times New Roman, serif" fill="#d4b15a">31</text>
+  </g>
+</svg>

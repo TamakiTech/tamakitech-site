@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#163d2a"/>
+      <stop offset="55%" stop-color="#0f2e1f"/>
+      <stop offset="100%" stop-color="#0a2418"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faf6ec"/>
+      <stop offset="100%" stop-color="#f3ead7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- App icon background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Soft vignette -->
+  <circle cx="512" cy="480" r="420" fill="#c9a227" opacity="0.06"/>
+
+  <g filter="url(#softShadow)">
+    <!-- Left tile: W -->
+    <rect x="210" y="320" width="220" height="300" rx="28" fill="url(#cream)" stroke="#c9a227" stroke-width="14"/>
+    <text x="320" y="520" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="160" font-weight="700" fill="#1a1a1a">W</text>
+
+    <!-- Center tile: I -->
+    <rect x="402" y="280" width="220" height="300" rx="28" fill="url(#cream)" stroke="#c9a227" stroke-width="14"/>
+    <text x="512" y="480" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="160" font-weight="700" fill="#1a1a1a">I</text>
+
+    <!-- Right hidden tile -->
+    <rect x="594" y="340" width="220" height="300" rx="28" fill="#5a2f22" stroke="#3d1f16" stroke-width="14"/>
+    <g stroke="#f3ead7" stroke-width="12" stroke-linecap="round" opacity="0.35">
+      <line x1="640" y1="420" x2="768" y2="420"/>
+      <line x1="640" y1="480" x2="768" y2="480"/>
+      <line x1="640" y1="540" x2="768" y2="540"/>
+    </g>
+  </g>
+
+  <!-- Magnifying glass -->
+  <g filter="url(#softShadow)">
+    <circle cx="700" cy="620" r="92" fill="none" stroke="#c9a227" stroke-width="28"/>
+    <circle cx="700" cy="620" r="92" fill="#c9a227" opacity="0.12"/>
+    <line x1="768" y1="688" x2="848" y2="768" stroke="#c9a227" stroke-width="28" stroke-linecap="round"/>
+  </g>
+</svg>
