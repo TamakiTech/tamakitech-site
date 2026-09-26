@@ -8,13 +8,13 @@
       name="description"
       content="Tamaki Technologies makes fast games you can play in the browser with friends."
     />
-    <link rel="icon" href="icons/dingus.svg" />
+    <link rel="icon" href="logo/tamaki-t.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip" href="#games">Skip to games</a>
     <header class="site-header">
-      <a class="logo" href="#top">Tamaki</a>
+      <a class="logo" href="#top"><img src="logo/tamaki-tech.jpg" alt="Tamaki Technologies" /></a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#games">Games</a>
         <a href="#company">Company</a>
@@ -24,130 +24,133 @@
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Play one more game</h1>
-        <p>with friends, in the browser</p>
-        <div class="orbit" aria-hidden="true">
-          <div class="sphere"></div>
-          <img class="orb orb-1" src="icons/dots.svg" alt="" />
-          <img class="orb orb-2" src="icons/ochos.svg" alt="" />
-          <img class="orb orb-3" src="icons/dingus.svg" alt="" />
-          <img class="orb orb-4" src="icons/wordinspector.svg" alt="" />
-          <img class="orb orb-5" src="icons/reversi.svg" alt="" />
+      <section class="intro" aria-labelledby="hero-title">
+        <div class="intro-heading">
+          <img class="mark" src="logo/tamaki-t.png" alt="" />
+          <div>
+            <h1 id="hero-title">Games from Tamaki</h1>
+            <p>Card games, board games, and word games. Play in the browser, or get the Android app on Google Play.</p>
+          </div>
         </div>
       </section>
 
-      <div id="games">
-        <article class="feature feature-dingus" id="dingus">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="cards">
-              <div class="card card-a"><span>A</span><strong>A</strong></div>
-              <div class="card card-b"><span>K</span><strong>K</strong></div>
-              <div class="card card-c"><span>Q</span><strong>Q</strong></div>
+      <div class="games" id="games">
+        <article class="game" id="dingus">
+          <img class="banner" src="graphics/dingus.png" alt="Dingus, the ridiculously competitive card game" />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/dingus.svg" alt="" />
+              <div>
+                <h2>Dingus</h2>
+                <p>Empty your hand first and you run the room. Empty it last and you are the Dingus.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="play" href="https://dingus.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.tamakitech.dingus">Google Play</a>
             </div>
           </div>
-          <div class="feature-copy">
-            <img src="icons/dingus.svg" alt="" />
-            <h2>Dingus</h2>
-            <p>A climbing card game for a full table. Empty your hand first and you run the room. Empty it last and you are the Dingus.</p>
-            <a class="play" href="https://dingus.tamakitech.com/">Play on the web</a>
-          </div>
         </article>
 
-        <article class="feature feature-ochos" id="ochos-locos">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="eight">8</div>
-            <div class="suits"><i></i><i></i><i></i><i></i></div>
-          </div>
-          <div class="feature-copy">
-            <img src="icons/ochos.svg" alt="" />
-            <h2>Ochos Locos</h2>
-            <p>Crazy eights, rápido. Match the suit, drop an eight, and race to clear your hand.</p>
-            <a class="play" href="https://ochoslocos.tamakitech.com/">Play on the web</a>
-          </div>
-        </article>
-
-        <article class="feature feature-thirtyone" id="thirty-one">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="felt">31</div>
-          </div>
-          <div class="feature-copy">
-            <img src="icons/thirtyone.svg" alt="" />
-            <h2>Thirty-One</h2>
-            <p>Draw, discard, and knock. Build a three-card hand as close to 31 as you can.</p>
-            <a class="play" href="https://thirtyone.tamakitech.com/">Play on the web</a>
-          </div>
-        </article>
-
-        <article class="feature feature-marble" id="marble-game">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="track"></div>
-            <i class="pip pip-r"></i>
-            <i class="pip pip-b"></i>
-            <i class="pip pip-y"></i>
-            <i class="pip pip-g"></i>
-          </div>
-          <div class="feature-copy">
-            <img src="icons/marble.svg" alt="" />
-            <h2>The Marble Game</h2>
-            <p>Get all four marbles home. Roll, race, and send the other colors back to start.</p>
-            <a class="play" href="https://themarblegame.tamakitech.com/">Play on the web</a>
-          </div>
-        </article>
-
-        <article class="feature feature-word" id="word-inspector">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="tiles">
-              <div class="tile">W</div>
-              <div class="tile">I</div>
-              <div class="tile tile-hid">?</div>
+        <article class="game" id="ochos-locos">
+          <img class="banner" src="graphics/ochos.png" alt="Ochos Locos, crazy eights" />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/ochos.svg" alt="" />
+              <div>
+                <h2>Ochos Locos</h2>
+                <p>Match the suit, drop an eight, and race to clear your hand.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="play" href="https://ochoslocos.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.tamakitech.ochoslocos">Google Play</a>
             </div>
           </div>
-          <div class="feature-copy">
-            <img src="icons/wordinspector.svg" alt="" />
-            <h2>Word Inspector</h2>
-            <p>Hide a secret word, ask for letters, and outscore the table.</p>
-            <a class="play" href="https://wordinspector.tamakitech.com/">Play on the web</a>
+        </article>
+
+        <article class="game" id="thirty-one">
+          <img class="banner" src="graphics/thirtyone.png" alt="Thirty-One by Tamaki" />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/thirtyone.svg" alt="" />
+              <div>
+                <h2>Thirty-One</h2>
+                <p>Draw, discard, and knock. Build a three-card hand as close to 31 as you can.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="play" href="https://thirtyone.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.tamakitech.thirtyone">Google Play</a>
+            </div>
           </div>
         </article>
 
-        <article class="feature feature-dots" id="dots-and-boxes">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="paper">
-              <i class="line-h" style="left: 80px; top: 86px"></i>
-              <i class="line-v" style="left: 66px; top: 100px"></i>
-              <i class="box" style="left: 80px; top: 100px"></i>
+        <article class="game" id="word-inspector">
+          <img class="banner" src="graphics/wordinspector.png" alt="Word Inspector. Hide a word. Ask for letters." />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/wordinspector.svg" alt="" />
+              <div>
+                <h2>Word Inspector</h2>
+                <p>Hide a secret word, ask for letters, and outscore the table.</p>
+              </div>
             </div>
-          </div>
-          <div class="feature-copy">
-            <img src="icons/dots.svg" alt="" />
-            <h2>Dots &amp; Boxes</h2>
-            <p>Draw a line. Close a box. Keep the chain going.</p>
-            <a class="play" href="https://dotsandboxes.tamakitech.com/">Play on the web</a>
+            <div class="actions">
+              <a class="play" href="https://wordinspector.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.wordinspector.app">Google Play</a>
+            </div>
           </div>
         </article>
 
-        <article class="feature feature-reversi" id="reversi">
-          <div class="feature-art" aria-hidden="true">
-            <div class="wash"></div>
-            <div class="reversi-board">
-              <i class="disc disc-dark"></i>
-              <i class="disc disc-light"></i>
-              <i class="disc disc-light"></i>
-              <i class="disc disc-dark"></i>
+        <article class="game" id="dots-and-boxes">
+          <img class="banner" src="graphics/dots.png" alt="Dots and Boxes by Tamaki" />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/dots.svg" alt="" />
+              <div>
+                <h2>Dots &amp; Boxes</h2>
+                <p>Draw a line. Close a box. Keep the chain going.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="play" href="https://dotsandboxes.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.tamakitech.dotsandboxes">Google Play</a>
             </div>
           </div>
-          <div class="feature-copy">
-            <img src="icons/reversi.svg" alt="" />
-            <h2>Reversi</h2>
-            <p>Place a disc, flip a row, and take the board.</p>
-            <a class="play" href="https://reversi.tamakitech.com/">Play on the web</a>
+        </article>
+
+        <article class="game" id="reversi">
+          <img class="banner" src="graphics/reversi.png" alt="Reversi by Tamaki" />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/reversi.svg" alt="" />
+              <div>
+                <h2>Reversi</h2>
+                <p>Place a disc, flip a row, and take the board.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="play" href="https://reversi.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.tamakitech.reversi">Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game" id="marble-game">
+          <img class="banner" src="graphics/marble.png?v=2" alt="The Marble Game board, with red, blue, yellow, and green marbles." />
+          <div class="game-body">
+            <div class="game-copy">
+              <img src="icons/marble.svg" alt="" />
+              <div>
+                <h2>The Marble Game</h2>
+                <p>Get all four marbles home. Roll, race, and send the other colors back to start.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="play" href="https://themarblegame.tamakitech.com/">Play on the web</a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.tamakitechnologies.themarblegame">Google Play</a>
+            </div>
           </div>
         </article>
       </div>
@@ -158,7 +161,7 @@
           Tamaki Technologies LLC is an independent studio. The games are built to be learned in a minute,
           played on one device, or opened into a room with friends. No accounts.
         </p>
-        <p><a href="mailto:david@tamakitech.com">david@tamakitech.com</a></p>
+        <p><a href="mailto:support@tamakitech.com">support@tamakitech.com</a></p>
       </section>
 
       <section class="band" id="news">
@@ -172,8 +175,13 @@
 
     <footer class="site-footer">
       <div class="footer-brand">
-        <a class="logo" href="#top">Tamaki</a>
+        <a class="logo" href="#top"><img src="logo/tamaki-tech.jpg" alt="Tamaki Technologies" /></a>
         <p class="footer-tag">Play one more game.</p>
+        <p class="footer-social">
+          <a href="https://www.linkedin.com/company/tamaki-technologies-llc" target="_blank" rel="noopener noreferrer"><img src="logo/social/linkedin/in-logo/InBug-White.png" alt="LinkedIn" /></a>
+          <a href="https://x.com/tamakitech7" target="_blank" rel="noopener noreferrer"><img src="logo/social/x/logo.svg" alt="X" /></a>
+          <a href="https://www.instagram.com/tamakitechnologies" target="_blank" rel="noopener noreferrer"><img src="logo/social/instagram/Instagram_Glyph_White.svg" alt="Instagram" /></a>
+        </p>
         <p class="footer-copy">© 2026 Tamaki Technologies LLC</p>
       </div>
       <div class="footer-col">
