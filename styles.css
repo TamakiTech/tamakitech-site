@@ -223,15 +223,15 @@ img { display: block; max-width: 100%; }
 }
 
 .store {
-  background: #3a342c;
-  color: var(--ink);
-  border: 1px solid rgba(246, 241, 232, 0.55);
+  background: #e6d5b8;
+  color: #171410;
+  border: 1px solid #c9b48a;
 }
 
 .store:hover,
 .store:focus-visible {
-  background: #4a433a;
-  border-color: #f6f1e8;
+  background: #f3e8d4;
+  border-color: #b9a278;
 }
 
 .store:disabled {
