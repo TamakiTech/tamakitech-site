@@ -136,7 +136,7 @@ img { display: block; max-width: 100%; }
 }
 
 .game + .game {
-  border-top: 2px solid var(--rule);
+  border-top: 2px solid var(--ink);
   padding-top: 2.5rem;
 }
 
