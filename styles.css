@@ -294,11 +294,6 @@ img { display: block; max-width: 100%; }
   border-radius: 8px;
 }
 
-.footer-tag {
-  margin: 0.35rem 0 0;
-  font-weight: 700;
-}
-
 .footer-social {
   margin: 1rem 0 0;
   display: flex;
@@ -324,6 +319,12 @@ img { display: block; max-width: 100%; }
 .footer-copy {
   margin: 1.5rem 0 0;
   font-size: 0.98rem;
+}
+
+.footer-role {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .footer-col h2 {
