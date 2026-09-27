@@ -225,13 +225,13 @@ img { display: block; max-width: 100%; }
 .store {
   background: #e6d5b8;
   color: #171410;
-  border: 1px solid #c9b48a;
+  border: 1px solid #62b84a;
 }
 
 .store:hover,
 .store:focus-visible {
   background: #f3e8d4;
-  border-color: #b9a278;
+  border-color: #4ea338;
 }
 
 .store:disabled {
