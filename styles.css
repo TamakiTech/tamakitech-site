@@ -400,20 +400,11 @@ img { display: block; max-width: 100%; }
   color: var(--muted);
 }
 
-.learn-jump {
-  margin: 1.25rem 0 0;
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.learn-jump a { color: var(--ink); }
-
 .learn {
   max-width: 40rem;
   margin-top: 2.75rem;
   padding-top: 2rem;
   border-top: 2px solid var(--rule);
-  scroll-margin-top: 10rem;
 }
 
 .learn h2 {
