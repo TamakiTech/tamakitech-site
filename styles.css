@@ -120,6 +120,8 @@ img { display: block; max-width: 100%; }
   color: var(--muted);
 }
 
+.intro a { color: var(--ink); }
+
 .games {
   max-width: 1080px;
   margin: 0 auto;
@@ -235,6 +237,16 @@ img { display: block; max-width: 100%; }
 .store:disabled {
   opacity: 0.55;
   cursor: not-allowed;
+}
+
+.soon-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+  font-weight: 700;
 }
 
 .band {
