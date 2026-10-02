@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="felt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b6a49"/>
+      <stop offset="1" stop-color="#08261c"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="0.32" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#04140e" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="tile">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="512" height="512" fill="url(#felt)"/>
+    <ellipse cx="256" cy="210" rx="180" ry="90" fill="#ffffff" opacity="0.05"/>
+
+    <g filter="url(#card-shadow)" transform="translate(154 268) rotate(-16)">
+      <g transform="translate(-78 -112)">
+        <rect width="156" height="220" rx="18" fill="#e7eeff"/>
+        <rect x="7" y="7" width="142" height="206" rx="13" fill="none" stroke="#3b6cff" stroke-width="6"/>
+        <rect width="156" height="220" rx="18" fill="url(#sheen)"/>
+        <text x="16" y="40" fill="#17284d" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">10</text>
+        <text x="140" y="202" fill="#17284d" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" text-anchor="end">10</text>
+        <text x="78" y="124" font-size="68" text-anchor="middle" dominant-baseline="middle">🤖</text>
+      </g>
+    </g>
+
+    <g filter="url(#card-shadow)" transform="translate(358 268) rotate(16)">
+      <g transform="translate(-78 -112)">
+        <rect width="156" height="220" rx="18" fill="#fff6d8"/>
+        <rect x="7" y="7" width="142" height="206" rx="13" fill="none" stroke="#d4a017" stroke-width="6"/>
+        <rect width="156" height="220" rx="18" fill="url(#sheen)"/>
+        <text x="18" y="40" fill="#4a3410" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">7</text>
+        <text x="138" y="202" fill="#4a3410" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" text-anchor="end">7</text>
+        <text x="78" y="124" font-size="68" text-anchor="middle" dominant-baseline="middle">🥇</text>
+      </g>
+    </g>
+
+    <g filter="url(#card-shadow)" transform="translate(256 218) rotate(-2)">
+      <g transform="translate(-84 -118)">
+        <rect width="168" height="236" rx="18" fill="#e5f6ea"/>
+        <rect x="7" y="7" width="154" height="222" rx="13" fill="none" stroke="#1f8a4c" stroke-width="6"/>
+        <rect width="168" height="236" rx="18" fill="url(#sheen)"/>
+        <text x="14" y="42" font-size="32" text-anchor="start" dominant-baseline="middle">💥</text>
+        <text x="154" y="208" font-size="32" text-anchor="end" dominant-baseline="middle">💥</text>
+        <text x="84" y="124" font-size="76" text-anchor="middle" dominant-baseline="middle">📈</text>
+      </g>
+    </g>
+  </g>
+</svg>
