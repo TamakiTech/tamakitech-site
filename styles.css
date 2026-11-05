@@ -132,7 +132,9 @@ img { display: block; max-width: 100%; }
 
 .game {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(15.5rem, 17.5rem);
+  align-items: center;
+  gap: 1.25rem 1.5rem;
 }
 
 .game + .game {
@@ -149,9 +151,10 @@ img { display: block; max-width: 100%; }
 
 .game-body {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .game-body img {
@@ -195,6 +198,17 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
   gap: 0.6rem;
   flex: none;
+}
+
+.game .actions {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.game .play,
+.game .store,
+.game .soon-label {
+  width: 100%;
 }
 
 .play,
@@ -649,7 +663,12 @@ button.play {
   .intro { padding-top: 2.5rem; }
   .intro-heading { align-items: flex-start; }
   .intro-heading .mark { width: 72px; height: 72px; border-radius: 16px; }
+  .game { grid-template-columns: 1fr; }
   .game-body { flex-direction: column; }
+  .game .actions { flex-direction: row; flex-wrap: wrap; }
+  .game .play,
+  .game .store,
+  .game .soon-label { width: auto; }
   .actions { width: 100%; }
   .site-footer { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.25rem 2.5rem; }
   .divisions { grid-template-columns: 1fr; }
