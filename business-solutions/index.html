@@ -42,8 +42,8 @@
             <p>Calculation routines for pension administration, built so the inputs, the result, and the checks can be run again when the data changes. RetirementEngine.io is the product developed for this work. Custom automation is available as a fixed-fee project.</p>
           </li>
           <li>
-            <h3>SQL and data reconciliation</h3>
-            <p>Compare data sources with SQL, match keys, and document the rows that do not agree. The work is for administrative files that need to line up before a calculation or a test is trusted. Source files stay with you. This site does not accept uploads.</p>
+            <h3><a href="#reconciliation">Data reconciliation and validation</a></h3>
+            <p>Verify data accuracy after system conversions, software implementations, operational disruptions, and routine processing.</p>
           </li>
           <li>
             <h3>Excel and Python automation</h3>
@@ -57,38 +57,70 @@
       </section>
       <section class="band" aria-labelledby="product-title">
         <h2 id="product-title">RetirementEngine.io</h2>
-        <p>RetirementEngine.io is the flagship pension calculation platform of Tamaki Technologies LLC. It was developed by the company and remains a separate product and website.</p>
-        <p>The application is not embedded on tamakitech.com, and its code is not part of this site. Use the product at its own address.</p>
+        <p class="product-tagline">Automated Pension Calculations for Retirement Plan Administrators and Actuarial Professionals</p>
+        <p>RetirementEngine.io is the flagship pension calculation platform developed by Tamaki Technologies LLC.</p>
+        <p>The platform supports individual and batch pension calculations using configurable plan provisions and CSV-based data processing.</p>
+        <p>Designed to simplify complex retirement calculations, RetirementEngine.io helps organizations automate repetitive processes, improve consistency, and streamline calculation testing.</p>
+        <h3>Available Services</h3>
+        <ul class="qualify">
+          <li>Custom pension plan implementations</li>
+          <li>Automated benefit calculation development</li>
+          <li>Individual and batch calculation processing</li>
+          <li>Independent calculation testing and validation</li>
+          <li>Plan-specific configuration and enhancements</li>
+        </ul>
         <div class="actions">
-          <a class="play" href="https://retirementengine.io" target="_blank" rel="noopener noreferrer">Visit RetirementEngine.io</a>
+          <a class="play" href="#inquiry">Request a Demonstration</a>
+          <a class="store" href="https://retirementengine.io" target="_blank" rel="noopener noreferrer">Visit RetirementEngine.io</a>
         </div>
       </section>
-      <section class="band" aria-labelledby="founder-title">
-        <h2 id="founder-title">Founder</h2>
-        <p>The founder of Tamaki Technologies LLC has more than 25 years of experience in pension administration, automation, testing, and data management, and holds an MA in Economics.</p>
+      <section class="band" id="reconciliation" aria-labelledby="reconciliation-title">
+        <h2 id="reconciliation-title">Data Reconciliation &amp; Validation</h2>
+        <p class="product-tagline">Identify discrepancies before they become costly problems.</p>
+        <p>Tamaki Technologies provides specialized data reconciliation and validation services to help organizations verify data accuracy following system conversions, software implementations, operational disruptions, and routine processing.</p>
+        <p>Services include:</p>
         <ul class="qualify">
-          <li>25+ years in pension administration</li>
-          <li>Automation, testing, and data management</li>
-          <li>MA in Economics</li>
+          <li>SQL-based data reconciliation</li>
+          <li>Data conversion and migration validation</li>
+          <li>Financial and retirement data integrity testing</li>
+          <li>Automated exception reporting</li>
+          <li>Independent calculation and regression testing</li>
         </ul>
+        <p>Projects are delivered with clearly defined requirements, documented results, and fixed-fee pricing.</p>
+      </section>
+      <section class="band" id="experience" aria-labelledby="founder-title">
+        <h2 id="founder-title">Experience Behind the Solutions</h2>
+        <p>Tamaki Technologies LLC was founded by a technology and data management professional with more than 25 years of experience in pension administration, automated benefit calculations, systems analysis, software testing, and enterprise data management.</p>
+        <p>The founder holds a Master of Arts in Economics from the University of Missouri, combining advanced quantitative education with extensive hands-on experience developing and validating complex financial calculation systems.</p>
+        <p>This combination of business knowledge, analytical expertise, and software development experience allows Tamaki Technologies to deliver practical solutions tailored to each client's requirements.</p>
         <p><a class="section-link" href="/about/">More about the company</a></p>
       </section>
       <section class="band" id="inquiry" aria-labelledby="inquiry-title">
         <h2 id="inquiry-title">Project inquiry</h2>
-        <p>Send a short project note. The form opens an email to <a href="mailto:support@tamakitech.com">support@tamakitech.com</a>. Nothing is stored on this website, and there is no file upload.</p>
-        <p>Do not include participant data, Social Security numbers, account numbers, or other sensitive files. This form is for scoping a project, not for sending plan data.</p>
-        <form class="inquiry" id="project-inquiry" action="mailto:support@tamakitech.com" method="post" enctype="text/plain">
-          <label for="company">Company
-            <input id="company" name="company" type="text" required maxlength="200" autocomplete="organization" />
+        <p>Send a short project note. The form emails it to <a href="mailto:support@tamakitech.com">support@tamakitech.com</a>. Nothing is stored on this website, and there is no file upload.</p>
+        <p>Do not include confidential participant information, Social Security numbers, account numbers, or other sensitive data. This form is for scoping a project, not for sending plan data.</p>
+        <form class="inquiry" id="project-inquiry" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Project inquiry from tamakitech.com" />
+          <input type="hidden" name="from_name" value="Tamaki Technologies" />
+          <p class="honey" aria-hidden="true">
+            <label for="company-website">Leave this field blank</label>
+            <input id="company-website" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off" />
+          </p>
+          <label for="company">Company name
+            <input id="company" name="Company name" type="text" required maxlength="200" autocomplete="organization" />
           </label>
-          <label for="email">Contact email
+          <label for="contact-name">Contact name
+            <input id="contact-name" name="name" type="text" required maxlength="200" autocomplete="name" />
+          </label>
+          <label for="email">Email
             <input id="email" name="email" type="email" required maxlength="200" autocomplete="email" />
           </label>
           <label for="service">Service needed
-            <select id="service" name="service" required>
+            <select id="service" name="Service needed" required>
               <option value="">Select a service</option>
               <option>Pension calculation automation</option>
-              <option>SQL and data reconciliation</option>
+              <option>Data reconciliation and validation</option>
               <option>Excel and Python automation</option>
               <option>Fixed-fee technical consulting</option>
               <option>RetirementEngine.io</option>
@@ -96,17 +128,11 @@
             </select>
           </label>
           <label for="description">Project description
-            <textarea id="description" name="description" required maxlength="1200"></textarea>
+            <textarea id="description" name="Project description" required maxlength="1200"></textarea>
           </label>
-          <label for="timeline"><span>Timeline <span class="optional">(optional)</span></span>
-            <input id="timeline" name="timeline" type="text" maxlength="200" />
-          </label>
-          <button class="play" type="submit">Email this inquiry</button>
+          <button class="play" type="submit">Send inquiry</button>
           <p class="form-status" id="inquiry-status" role="status"></p>
         </form>
-        <noscript>
-          <p>If the form cannot open your email app, write to <a href="mailto:support@tamakitech.com?subject=Project%20inquiry">support@tamakitech.com</a> with your company, contact email, the service you need, a project description, and an optional timeline. Do not attach participant data or sensitive files.</p>
-        </noscript>
       </section>
     </main>
     <footer class="site-footer">
@@ -165,37 +191,50 @@
         var status = document.getElementById("inquiry-status");
         if (!form) return;
 
-        function oneLine(value) {
-          return String(value || "").replace(/[\r\n]+/g, " ").trim();
-        }
-
+        var accessKey = form.querySelector("[name='access_key']");
         form.addEventListener("submit", function (event) {
           event.preventDefault();
-          var data = new FormData(form);
-          var company = oneLine(data.get("company"));
-          var email = oneLine(data.get("email"));
-          var service = oneLine(data.get("service"));
-          var timeline = oneLine(data.get("timeline"));
-          var description = String(data.get("description") || "").trim();
-          var body = [
-            "Company: " + company,
-            "Contact email: " + email,
-            "Service needed: " + service,
-            "Timeline: " + (timeline || "Not specified"),
-            "",
-            "Project description:",
-            description,
-            "",
-            "Sent from the Tamaki Technologies project inquiry form.",
-            "Do not include participant data or attach sensitive files."
-          ].join("\n");
-          var href = "mailto:support@tamakitech.com?subject="
-            + encodeURIComponent("Project inquiry - " + company)
-            + "&body=" + encodeURIComponent(body);
-          if (status) {
-            status.textContent = "Your email app should open with this inquiry. Nothing is stored on this website. If no app opens, send the same details to support@tamakitech.com.";
+          var honey = form.querySelector("[name='botcheck']");
+          if (honey && honey.checked) {
+            if (status) status.textContent = "Thanks. Your inquiry was sent to support@tamakitech.com.";
+            form.reset();
+            return;
           }
-          window.location.href = href;
+          var button = form.querySelector("button[type='submit']");
+          if (!accessKey || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(accessKey.value)) {
+            if (status) status.textContent = "The inquiry could not be sent. Email support@tamakitech.com with the same details, and do not include participant data.";
+            return;
+          }
+          var company = form.querySelector("#company");
+          var subject = form.querySelector("[name='subject']");
+          if (subject && company && company.value.trim()) {
+            subject.value = "Project inquiry - " + company.value.replace(/[\r\n]+/g, " ").trim();
+          }
+          if (button) button.disabled = true;
+          if (status) status.textContent = "Sending your inquiry…";
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: new FormData(form)
+          }).then(function (response) {
+            return response.json().then(function (body) {
+              return { ok: response.ok, body: body || {} };
+            }).catch(function () {
+              return { ok: false, body: {} };
+            });
+          }).then(function (result) {
+            var sent = result.body.success === true || result.body.success === "true";
+            if (sent) {
+              form.reset();
+              if (status) status.textContent = "Thanks. Your inquiry was sent to support@tamakitech.com.";
+            } else {
+              if (status) status.textContent = "The inquiry could not be sent. Email support@tamakitech.com with the same details, and do not include participant data.";
+            }
+          }).catch(function () {
+            if (status) status.textContent = "The inquiry could not be sent. Email support@tamakitech.com with the same details, and do not include participant data.";
+          }).then(function () {
+            if (button) button.disabled = false;
+          });
         });
       })();
     </script>

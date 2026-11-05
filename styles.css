@@ -582,12 +582,28 @@ a.store:focus-visible {
 
 .services li:last-child { border-bottom: 1px solid var(--line); }
 
-.services h3 {
-  margin: 0 0 0.35rem;
+.services h3,
+.band h3 {
+  margin: 1.4rem 0 0.45rem;
   color: var(--ink);
   font-size: 1.2rem;
   letter-spacing: -0.02em;
 }
+
+.services h3 {
+  margin: 0 0 0.35rem;
+}
+
+.product-tagline {
+  max-width: 42rem;
+  margin: 0 0 0.85rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.band .actions { margin-top: 1.35rem; }
 
 .services p {
   margin: 0;
@@ -608,9 +624,8 @@ a.store:focus-visible {
   color: var(--ink);
 }
 
-.inquiry .optional {
-  font-weight: 500;
-  color: var(--muted);
+.inquiry .honey {
+  display: none;
 }
 
 .inquiry input,
@@ -640,6 +655,11 @@ a.store:focus-visible {
 button.play {
   cursor: pointer;
   appearance: none;
+}
+
+button.play:disabled {
+  cursor: wait;
+  opacity: 0.65;
 }
 
 .form-status {
