@@ -624,10 +624,6 @@ a.store:focus-visible {
   color: var(--ink);
 }
 
-.inquiry .honey {
-  display: none;
-}
-
 .inquiry input,
 .inquiry select,
 .inquiry textarea {

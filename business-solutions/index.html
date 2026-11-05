@@ -97,16 +97,9 @@
       </section>
       <section class="band" id="inquiry" aria-labelledby="inquiry-title">
         <h2 id="inquiry-title">Project inquiry</h2>
-        <p>Send a short project note. The form emails it to <a href="mailto:support@tamakitech.com">support@tamakitech.com</a>. Nothing is stored on this website, and there is no file upload.</p>
+        <p>Send a short project note. The form opens an email to <a href="mailto:support@tamakitech.com">support@tamakitech.com</a> with these details filled in. Nothing is stored on this website, and there is no file upload.</p>
         <p>Do not include confidential participant information, Social Security numbers, account numbers, or other sensitive data. This form is for scoping a project, not for sending plan data.</p>
-        <form class="inquiry" id="project-inquiry" action="https://api.web3forms.com/submit" method="post">
-          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY" />
-          <input type="hidden" name="subject" value="Project inquiry from tamakitech.com" />
-          <input type="hidden" name="from_name" value="Tamaki Technologies" />
-          <p class="honey" aria-hidden="true">
-            <label for="company-website">Leave this field blank</label>
-            <input id="company-website" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off" />
-          </p>
+        <form class="inquiry" id="project-inquiry" action="mailto:support@tamakitech.com" method="post" enctype="text/plain">
           <label for="company">Company name
             <input id="company" name="Company name" type="text" required maxlength="200" autocomplete="organization" />
           </label>
@@ -191,50 +184,35 @@
         var status = document.getElementById("inquiry-status");
         if (!form) return;
 
-        var accessKey = form.querySelector("[name='access_key']");
+        function oneLine(value) {
+          return String(value || "").replace(/[\r\n]+/g, " ").trim();
+        }
+
         form.addEventListener("submit", function (event) {
           event.preventDefault();
-          var honey = form.querySelector("[name='botcheck']");
-          if (honey && honey.checked) {
-            if (status) status.textContent = "Thanks. Your inquiry was sent to support@tamakitech.com.";
-            form.reset();
-            return;
+          var company = oneLine(document.getElementById("company").value);
+          var contact = oneLine(document.getElementById("contact-name").value);
+          var email = oneLine(document.getElementById("email").value);
+          var service = oneLine(document.getElementById("service").value);
+          var description = String(document.getElementById("description").value || "").trim();
+          var body = [
+            "Company name: " + company,
+            "Contact name: " + contact,
+            "Email: " + email,
+            "Service needed: " + service,
+            "",
+            "Project description:",
+            description,
+            "",
+            "Sent from the Tamaki Technologies project inquiry form.",
+            "Do not include confidential participant information."
+          ].join("\n");
+          if (status) {
+            status.textContent = "Your email app should open with this inquiry addressed to support@tamakitech.com. If no app opens, send the same details to that address. Do not include participant data.";
           }
-          var button = form.querySelector("button[type='submit']");
-          if (!accessKey || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(accessKey.value)) {
-            if (status) status.textContent = "The inquiry could not be sent. Email support@tamakitech.com with the same details, and do not include participant data.";
-            return;
-          }
-          var company = form.querySelector("#company");
-          var subject = form.querySelector("[name='subject']");
-          if (subject && company && company.value.trim()) {
-            subject.value = "Project inquiry - " + company.value.replace(/[\r\n]+/g, " ").trim();
-          }
-          if (button) button.disabled = true;
-          if (status) status.textContent = "Sending your inquiry…";
-          fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: { Accept: "application/json" },
-            body: new FormData(form)
-          }).then(function (response) {
-            return response.json().then(function (body) {
-              return { ok: response.ok, body: body || {} };
-            }).catch(function () {
-              return { ok: false, body: {} };
-            });
-          }).then(function (result) {
-            var sent = result.body.success === true || result.body.success === "true";
-            if (sent) {
-              form.reset();
-              if (status) status.textContent = "Thanks. Your inquiry was sent to support@tamakitech.com.";
-            } else {
-              if (status) status.textContent = "The inquiry could not be sent. Email support@tamakitech.com with the same details, and do not include participant data.";
-            }
-          }).catch(function () {
-            if (status) status.textContent = "The inquiry could not be sent. Email support@tamakitech.com with the same details, and do not include participant data.";
-          }).then(function () {
-            if (button) button.disabled = false;
-          });
+          window.location.href = "mailto:support@tamakitech.com?subject="
+            + encodeURIComponent("Project inquiry - " + company)
+            + "&body=" + encodeURIComponent(body);
         });
       })();
     </script>
